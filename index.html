@@ -22,7 +22,7 @@
 
 <body>
     <div id="body-wrap">
-        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.yimian.xyz/img?type=moe&size=1920x1080)">
+        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.yppp.net/api.php)">
             <div id="page_site-info">
                 <div id="site-title">
                     <span class="blogtitle"></span>
@@ -47,7 +47,7 @@
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
                                 <img class="avatar-img"
-                                    src="https://baihw.cn/img/avatar.jpg"
+                                    src="./static/img/avatar.jpg"
                                     alt="avatar">
                                 <div class="author-info__name">Lingerbhw233</div>
                                 <div class="author-info__description">05后青年，略懂编程，学生</div>
@@ -56,7 +56,8 @@
                                 <a class="social-icon" href="https://github.com/lingerbhw" target="_blank">
                                     <i class="fa fa-github"></i>
                                 </a>
-				<a class="social-icon" href="https://baihw.cn" target="_blank">
+
+                                <a class="social-icon" href="https://baihw.cn" target="_blank">
                                     <i class="fa fa-flickr"></i>
                                 </a>
                             </div>
@@ -114,45 +115,45 @@
                         <div class="skillbox">
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 75%">
+                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 10%">
                                     <span>Java</span>
                                 </div>
-                                <div class="skill-bar-percent">75%</div>
+                                <div class="skill-bar-percent">10%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 40%">
+                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 10%">
                                     <span>前端</span>
                                 </div>
-                                <div class="skill-bar-percent">40%</div>
+                                <div class="skill-bar-percent">10%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 30%">
+                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 10%">
                                     <span>Spring</span>
                                 </div>
-                                <div class="skill-bar-percent">30%</div>
+                                <div class="skill-bar-percent">10%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 20%">
+                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 10%">
                                     <span>算法</span>
                                 </div>
                                 <div class="skill-bar-percent">10%</div>d
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 30%">
+                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 10%">
                                     <span>MySQL</span>
                                 </div>
-                                <div class="skill-bar-percent">30%</div>
+                                <div class="skill-bar-percent">10%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 99%">
-                                    <span>CV工程师技能</span>
+                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 100%">
+                                    <span>CV工程师</span>
                                 </div>
-                                <div class="skill-bar-percent">99%</div>
+                                <div class="skill-bar-percent">100%</div>
                             </div>
                         </div>
 
@@ -163,7 +164,7 @@
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <div class="copyright">&copy;2021 - 2024 BY Lingerbhw233</div>
+                <div class="copyright"></div>
             </div>
         </footer>
     </div>
@@ -177,7 +178,7 @@
     <link rel="stylesheet" href="https://cdn-js.moeworld.top/npm/aplayer/dist/APlayer.min.css">
     <script src="https://cdn-js.moeworld.top/npm/aplayer/dist/APlayer.min.js"></script>
     <!-- require MetingJS -->
-    <script src="https://cdn-js.moeworld.top/npm/meting@2/dist/Meting.min.js"></script>
+    <script src="./static/js/meting.min.js"></script>
 
     <!-- nplayer -->
     <script src="https://unpkg.com/nplayer@latest/dist/index.min.js"></script>
@@ -188,7 +189,7 @@
 
     <!-- 看板娘 -->
     <!-- <link rel="stylesheet" href="https://cdn-js.moeworld.top/npm/font-awesome/css/font-awesome.min.css"> -->
-    <!-- <script src="https://cdn-js.moeworld.top/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
+    <!-- <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/autoload.js"></script> -->
 
     <!--鼠标点击效果-->
     <script src="https://cdn-js.moeworld.top/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
@@ -253,6 +254,9 @@
                 }, 2000);
             }
         });
+        //获取当前年份
+        const year = new Date().getFullYear();
+        document.querySelector('.copyright').innerHTML = `Copyright © 2024-${year} Lingerbhw233.`;
     </script>
 </body>
 

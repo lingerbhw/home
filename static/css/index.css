@@ -239,6 +239,12 @@ aside_content .card-info .author-info__description {
     margin: 0 .5rem;
     color: #4c4948;
     font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#aside_content .card-info .card-info-social-icons .social-icon:hover {
+    color: #FF0066;
 }
 
 #aside_content .item-headline {
